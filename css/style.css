@@ -111,10 +111,10 @@ a{
 .album{
     display: inline-block;
     width: 90%;
-    
-    
 }
-
+.title{
+    padding: 20px 0px 10px 10px;
+}
 /* SIDEBAR  */
 .logo{
     width: 60%;
