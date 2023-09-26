@@ -11,10 +11,10 @@
     --color-grey: #717171;
     --color-light-grey: #c1c1c1;
     --color-highlight: #adff2f;
+    --color-call-to-action: #080B12
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    width: 10vw;
 }
 
 /* FLEX */
@@ -23,7 +23,24 @@ body{
     display: flex;
 }
 
-
+/* UTILITY */
+h3{
+    color: #ffffff;
+    font-weight: 800;
+}
+h4{
+    color: #ffffff;
+    font-weight: 800;
+}
+small{
+    color: var(--color-grey);
+}
+.text-center{
+    text-align: center;
+}
+.pt-10{
+    padding-top: 10px;
+}
 /* CONTAINER */
 
 .wrapper{
@@ -31,7 +48,7 @@ body{
     height: 100vh;
 }
 main{
-    width: 1000%;
+    width: 100%;
     height: calc(100% - 90px);
     background-color: var();
 }
@@ -46,7 +63,7 @@ main{
     padding: 90px 10px 0px 10px;
 }
 #call-to-action{
-    background-color: var(--color-highlight);
+    background-color: var(--color-call-to-action);
     width: calc(100% - 250px);
     height: 70px;
     position: fixed;
@@ -62,4 +79,25 @@ main{
     bottom: 0;
     left: 0;
     z-index: 1000;
+}
+
+/* CARD */
+
+.card{
+    /* width: calc(100% / 6 - 20px); */
+}
+.card-content{
+    width: 100%;
+
+   
+}
+.card-img{
+    /* width: 20px; */
+    /* height: 20px; */
+}
+.album{
+    display: inline-block;
+    width: 90%;
+    
+    
 }
