@@ -98,7 +98,7 @@ a{
 /* CARD */
 
 .card{
-    /* width: calc(100% / 6 - 20px); */
+    
 }
 .card-content{
     width: 100%;
@@ -106,12 +106,17 @@ a{
    
 }
 .card-img{
-    /* width: 20px; */
-    /* height: 20px; */
+   
 }
 .album{
     display: inline-block;
     width: 90%;
     
     
+}
+
+/* SIDEBAR  */
+.logo{
+    width: 60%;
+    padding: 15px 5px 20px 15px;
 }
