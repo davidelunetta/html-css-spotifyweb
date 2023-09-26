@@ -80,6 +80,20 @@ main{
     left: 0;
     z-index: 1000;
 }
+.btn{
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    color: #ffffff;
+    background-color: var(--color-call-to-action);
+    position: absolute;
+    top: 15px;
+    right: 0;
+
+}
+a{
+    text-decoration: none;
+}
 
 /* CARD */
 
