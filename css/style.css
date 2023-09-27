@@ -22,6 +22,13 @@ body{
 .d-flex{
     display: flex;
 }
+.f-wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+    justify-items: center;
+}
 
 /* UTILITY */
 h3{
@@ -34,12 +41,22 @@ h4{
 }
 small{
     color: var(--color-grey);
+    
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
 }
 .text-center{
     text-align: center;
 }
 .pt-10{
     padding-top: 10px;
+}
+.text-gray{
+    color: var(--color-grey);
 }
 /* CONTAINER */
 
@@ -75,7 +92,7 @@ main{
     width: 100%;
     height: 90px;
     background-color: var(--color-grey);
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -89,10 +106,20 @@ main{
     position: absolute;
     top: 15px;
     right: 0;
-
+    z-index: 1000;
 }
-a{
-    text-decoration: none;
+.music-type{
+    padding: 0px 10px 5px 10px;
+    font-size: x-small;
+    font-weight: 800;
+}
+.highlight{
+    width: 25px;
+    border: 1px solid var(--color-highlight);
+    position: relative;
+    left: 310px;
+    top: 0px;
+    
 }
 
 /* CARD */
@@ -102,19 +129,28 @@ a{
 }
 .card-content{
     width: 100%;
+}
+.card-content-foryou{
+    width: 17%;
+}
 
-   
-}
-.card-img{
-   
-}
+
 .album{
     display: inline-block;
     width: 90%;
 }
+.album-foryou{
+    display: inline-block;
+    width: 90%;
+}
+.for-you{
+    width: calc(100% / 2 -50px);
+}
 .title{
     padding: 20px 0px 10px 10px;
 }
+
+
 /* SIDEBAR  */
 .logo{
     width: 60%;
