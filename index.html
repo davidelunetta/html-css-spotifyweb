@@ -20,6 +20,7 @@
 
     <nav id="sidebar">
         <img class="logo" src="img/logo.svg" alt="logo">
+        <img class="display-none" src="img/logo-small.svg" alt="logo">
     </nav>
 
 <!-- FIRST SECTION         -->
@@ -27,7 +28,10 @@
     <section id="main-content">
         <nav class="d-flex f-wrap justify-center">
             <ul class="d-flex f-wrap justify-center">
-                <li class="music-type"><a class="text-gray"href="#">IN EVIDENZA</a></li>
+                <div>
+                    <li class="music-type"><a class="text-gray"href="#">IN EVIDENZA</a></li>
+                    <div class="highlight"></div>
+                </div>
                 <li class="music-type"><a class="text-gray"href="#">PODCAST</a></li>
                 <li class="music-type"><a class="text-gray"href="#">CLASSIFICHE</a></li>
                 <li class="music-type"><a class="text-gray"href="#">GENERI E MOOD</a></li>
@@ -35,7 +39,7 @@
                 <li class="music-type"><a class="text-gray"href="#">SCOPRI</a></li>
             </ul> 
         </nav>
-        <div class="highlight"></div>
+        
         <section class="recently-played">
             <h3 class="title">Recently played</h3>
             <div class="card d-flex">
@@ -72,27 +76,41 @@
             </div>
         </section>
         <!-- SECOND SECTION   -->
-        <section id="for/you">
+        <section id="for-you">
             <div class="for-you">
                 <h3 class="title">Creato per Davide</h3>
                 <small>Più ascolti, più accurati saranno i suggerimenti.</small>
                 <div class="d-flex">
                     <div class="card-content-foryou">
                         <img class="album-foryou" src="img/radar.jpeg" alt="radar"> 
-                        <h4 class="pt-10 text-center ">Heavy Metal</h4>
-                        <small class="text-center">Subtitle</small>   
+                        <h4 class="pt-10 text-center ">Release Radar</h4>  
                     </div>
                     <div class="card-content-foryou">
                         <img class="album-foryou" src="img/mixdaily.jpeg" alt="daily-mix"> 
-                        <h4 class="pt-10 text-center ">Heavy Metal</h4>
+                        <h4 class="pt-10 text-center ">Daily Mix 1</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- THIRD SECTION  -->
+        <section id="most-popular">
+            <div class="for-you">
+                <h3 class="title">Artisti più popolari</h3>
+                <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                <div class="d-flex pt-10">
+                    <div class="card-content-foryou">
+                        <img class="album-most-popular" src="img/youg.jpeg" alt="youg"> 
+                        <h4 class="pt-10 text-center ">Youg</h4>
+                        <small class="text-center">Subtitle</small>   
+                    </div>
+                    <div class="card-content-foryou">
+                        <img class="album-most-popular" src="img/einaudi.jpeg" alt="ludovico-einaudi"> 
+                        <h4 class="pt-10 text-center ">Ludovico Einaudi</h4>
                         <small class="text-center">Subtitle</small>   
                     </div>
                 </div>
             </div>
-         
-    </section>
-
-
+        </section>
     </section>
     </main>
         <div id="playbar"></div>

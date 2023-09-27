@@ -116,9 +116,7 @@ main{
 .highlight{
     width: 25px;
     border: 1px solid var(--color-highlight);
-    position: relative;
-    left: 310px;
-    top: 0px;
+    margin: 0 auto;
     
 }
 
@@ -149,10 +147,18 @@ main{
 .title{
     padding: 20px 0px 10px 10px;
 }
+.album-most-popular{
+    display: inline-block;
+    width: 90%;
+    border-radius: 50%;
+}
 
 
 /* SIDEBAR  */
 .logo{
     width: 60%;
     padding: 15px 5px 20px 15px;
+}
+.display-none{
+    display: none;
 }
