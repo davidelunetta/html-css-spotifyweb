@@ -29,6 +29,10 @@ body{
     justify-content: center;
     justify-items: center;
 }
+.justify-down{
+    justify-content: end;
+    justify-items: end
+}
 
 /* UTILITY */
 h3{
@@ -93,7 +97,7 @@ main{
     background-color: var(--color-call-to-action);
     width: calc(100% - 250px);
     height: 70px;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
 }
@@ -101,7 +105,7 @@ main{
 #playbar{
     width: 100%;
     height: 90px;
-    background-color: var(--color-grey);
+    background-color: var(--color-dark-grey);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -126,14 +130,17 @@ main{
 .highlight{
     width: 25px;
     border: 1px solid var(--color-highlight);
+    margin: 0 auto;  
+}
+.line{
+    width: 70px;
+    border: 1px solid var(--color-grey);
     margin: 0 auto;
-    
 }
 
 /* CARD */
+.cover{
 
-.card{
-    
 }
 .card-content{
     width: 100%;
@@ -174,4 +181,35 @@ main{
 }
 .display-none{
     display: none;
+}
+.sidebar-down{
+    padding: 15px 5px 20px 20px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1200px){
+    .wrap{
+        flow-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 4);
+        /* min-width: 100px; */
+        /* padding: 0 20px 10px 0; */
+    }
+}
+@media screen and (max-width: 992px) {
+    .card{
+        width: calc(100% / 3);
+    }
+    
+}
+@media screen and (max-widt: 576px) {
+    .display-none{
+        display: none;
+    }
+    .display-block{
+        display: block;
+    }
+    
 }
