@@ -228,15 +228,15 @@ main{
     padding-top: 5px;
 }
 .song-bar{
-    display: inline;
-    width: 3px;
-    height: 90px;
+    display: block;
+    width: 90px;
+    height: 3px;
     margin: 0 auto;
     border: 2px solid var(--color-grey);
     border-radius: 20px;
 }
 .songbar-light{
-    display: inline;
+    display: block;
     width: 190px;
     height: 3px;
     margin: 0 auto;
