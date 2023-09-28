@@ -153,9 +153,6 @@ main{
 }
 
 /* CARD */
-.cover{
-
-}
 .card-content{
     width: 100%;
 }
@@ -215,19 +212,49 @@ main{
 /* PLAYBAR */
 
 .playbar-left{
-    max-width: calc(100% / 3);
+   
     max-height: 60px;
+    width: 200px;
+    padding-top: 25px;
 }
 .img-playbar{
-    /* display: block; */
-    width: 50%;
-    height: 50%;
+    display: block;
+    padding-left: 15px;
+    scale: 120%;
+   
+}
+.playbar-song{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.song-bar{
+    display: inline;
+    width: 3px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid var(--color-grey);
+    border-radius: 20px;
+}
+.songbar-light{
+    display: inline;
+    width: 190px;
+    height: 3px;
+    margin: 0 auto;
+    border: 2px solid var(--color-black);
+    border-radius: 20px;
+}
+.playbar-center{
+    height: 30px;
+    margin: 0 auto;
+}
+.icon{
+    padding: 10px 10px 10px 10px;
 }
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1200px){
     .wrap{
-        flow-wrap: wrap;
+        flex-flow: wrap;
     }
     .card{
         width: calc(100% / 4);
